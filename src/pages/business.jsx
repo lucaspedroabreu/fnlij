@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import { CheckCircleIcon, InformationCircleIcon } from '@heroicons/react/20/solid'
+import Image from 'next/image'
 
 const Business = () => {
 
@@ -77,13 +77,13 @@ const Business = () => {
           <figure className="mt-10 border-l-4 border-theme-green pl-9">
             <blockquote className="font-semibold text-theme-green">
               <p>
-                “As crianças e os adolescentes têm todos os direitos humanos, não porque são "o futuro", mas porque são seres humanos. Hoje.”
+                “As crianças e os adolescentes têm todos os direitos humanos, não porque são &quot;o futuro&quot;, mas porque são seres humanos. Hoje.”
               </p>
             </blockquote>
             <figcaption className="mt-6 flex gap-x-4">
               
               <div className="text-sm leading-6">
-                <strong className="font-semibold text-blue-900">UNICEF</strong> –  United Nations Children's Fund
+                <strong className="font-semibold text-blue-900">UNICEF</strong> –  United Nations Children&apos;s Fund
               </div>
             </figcaption>
           </figure>
@@ -93,7 +93,9 @@ const Business = () => {
           </p> */}
         </div>
         <figure className="mt-16">
-          <img
+          <Image
+            height="100%"
+            width="100%"
             className="aspect-video rounded-xl bg-gray-50 object-cover"
             src="/vozes-ancestrais-premio2017.jpg"
             alt="Índio - Vozes Ancestrais - Dez contos indígenas de Daniel Munduruku"
